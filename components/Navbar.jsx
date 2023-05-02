@@ -16,7 +16,10 @@ const Navbar = () => {
         </Link>
         <button className='p-4 hover:bg-[#26199e] rounded'>News</button>
         <button className='p-4 hover:bg-[#26199e] rounded'>Events</button>
+        <Link href='/admission'>
         <button className='p-4 hover:bg-[#26199e] rounded'>Admissions</button>
+        </Link>
+        
         
 <Link href='/affliates'>
 <button className='p-4 hover:bg-[#26199e] rounded'>Affiliates</button>

@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-
 
 const AffliatesPage = () => {
 
@@ -9,9 +7,10 @@ const AffliatesPage = () => {
     <>
     <div className='text-center mt-3 mb-4'>
     <h1>Admission</h1>
-    
     </div>
-    <div className='ml-10 justify-center flex flex-row-8 gap-5'>
+    <div className='ml-10 justify-center inline-block  gap-5'>
+    
+    <div >
 
     <button className='w-20 '>
       <img src='deped.png'></img>
@@ -41,8 +40,8 @@ const AffliatesPage = () => {
       <img src='ched.png'></img>
     </button>
     
-
-    
+</div>
+    <div>
     <button className='w-20'>
       <img src='pagibig.png'></img>
     </button>
@@ -56,15 +55,15 @@ const AffliatesPage = () => {
     </button>
 
     <button className='w-20'>
-      
+      <img src='NCRAA1.png'></img>
     </button>
 
     <button className='w-20'>
-      
+      <img src='ISAAL.png'></img>
     </button>
 
     <button className='w-20'>
-      
+      <img src='ISAA.png'></img>
     </button>
 
     <button className='w-20'>
@@ -83,7 +82,7 @@ const AffliatesPage = () => {
       
     </button>
     </div>
-    
+    </div>
     
     </>
   );
