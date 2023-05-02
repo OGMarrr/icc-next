@@ -15,7 +15,9 @@ const Navbar = () => {
         <button className='p-4 hover:bg-primary rounded'>Home</button>
         </Link>
         <button className='p-4 hover:bg-[#26199e] rounded'>News</button>
+        <Link href='/events'>
         <button className='p-4 hover:bg-[#26199e] rounded'>Events</button>
+        </Link>
         <Link href='/admission'>
         <button className='p-4 hover:bg-[#26199e] rounded'>Admissions</button>
         </Link>

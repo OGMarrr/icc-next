@@ -15,7 +15,7 @@ const Cards = () => {
 							Discover who we are and why ICC is one of the best schools around!
 						</p>
 					</div>
-					{/* qweqwe */}
+					
 				</div>
 
 				<div className='w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300'>
