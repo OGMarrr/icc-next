@@ -8,7 +8,9 @@ const Navbar = () => {
 
   return (
     <div className='bg-[#1e3a8a] flex justify-between items-center h-24   mx-auto px-4 text-white'>
-      <img className='w-20 mx-auto mt-2' src="/immaculada.png" alt="/" />
+      <Link href="/">
+      <img className='w-24 mx-auto mt-2' src="/immaculada.png" alt="/" />
+      </Link>
       <h1 className='w-full text-xl font-bold text-[#fbbf24]'>IMMACULADA CONCEPTION COLLEGE </h1>
       <ul className='hidden md:flex'>
         <Link href='/'>
