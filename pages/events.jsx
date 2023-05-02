@@ -2,6 +2,11 @@ const EventPagas = () => {
 
     return(
         <>
+
+
+        <div>
+        <iframe className="w-1/2 aspect-video block mx-auto mt-5" allow="autoplay" src="file.mp4"></iframe>
+        </div>
         <div>
         <div className=" ml-20 mt-6 text-center gap-5">
             <p className="text-3xl mb-3 text-[#fbbf24]">NCRAA Season 29 Mens Basketball Tournament</p>
