@@ -14,8 +14,8 @@ const Navbar = () => {
 				width={160}
 				src="/immaculada.png"
 				alt="/"
-				data-aos="fade-up"
-				data-aos-duration="800"
+				// data-aos="zoom-in-up"
+				// data-aos-duration="800"
 			/>
 
 			<h1 className='w-full text-xl font-bold '>

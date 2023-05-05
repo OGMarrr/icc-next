@@ -17,7 +17,11 @@ const Hero = () => {
 						}}
 						className="h-5/6 w-auto bg-fixed"
 					>
-						<div className="grid grid-cols-2 text-center p-24">
+						<div
+							className="grid grid-cols-2 text-center p-24"
+							data-aos="fade-up"
+							data-aos-duration="1000"
+						>
 							<div className="mt-14">
 								<p className='text-3xl font-bold p-2'>Our Mission & Vision</p>
 								<p className='md:text-lg sm:text-lg text-lg font-medium md:py-6 '>

@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import { useRouter } from "next/router";
@@ -6,6 +7,7 @@ const OrganizationPage = () => {
 	const router = useRouter();
 	return (
 		<>
+			<Navbar />
 			<AnimatePresence>
 				<motion.div
 					key={router.route}

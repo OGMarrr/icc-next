@@ -8,6 +8,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Router, useRouter } from "next/router";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +17,7 @@ export default function Home() {
 
   return (
     <>
-      <AnimatePresence>
+      {/* <AnimatePresence>
         <motion.div
           key={router.route}
           initial="initialState"
@@ -35,13 +36,14 @@ export default function Home() {
             exitState: {},
           }}
           className="base-page-size"
-        >
-          <Hero />
+        > */}
+      <Navbar />
+      <Hero />
 
-          <Cards />
-          <AffliatesPage />
-        </motion.div>
-      </AnimatePresence>
+      <Cards />
+      <AffliatesPage />
+      {/* </motion.div>
+      </AnimatePresence> */}
     </>
   );
 }

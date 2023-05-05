@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import { useRouter } from "next/router";
@@ -25,6 +26,7 @@ const EventPage = () => {
 					}}
 					className="base-page-size"
 				>
+					<Navbar />
 					<div>
 						<div>
 							<p className="text-3xl text-center text-success mt-3">News</p>
