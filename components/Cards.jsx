@@ -1,10 +1,18 @@
+import Image from "next/image";
+
 const Cards = () => {
 	return (
-		<div className='w-full py-[10rem] px-4 bg-white'>
-			<div className='max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8'>
-				<div className='w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300'>
-					<img
-						className='w-80 mx-auto mt-[-3rem] bg-white'
+		<div className='w-full py-[10rem] px-4 bg-secondary'>
+			<div
+				className='max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8 '
+				data-aos="fade-up"
+				data-aos-duration="800"
+			>
+				<div className='w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300 bg-primary'>
+					<Image
+						width={320}
+						height={160}
+						className=' mx-auto mt-[-3rem]'
 						src="/school.jpg"
 						alt="/"
 					/>
@@ -15,12 +23,13 @@ const Cards = () => {
 							Discover who we are and why ICC is one of the best schools around!
 						</p>
 					</div>
-					{/* qweqwe */}
 				</div>
 
-				<div className='w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300'>
-					<img
-						className='w-80 mx-auto mt-[-3rem] bg-white'
+				<div className='w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300 bg-primary'>
+					<Image
+						width={320}
+						height={160}
+						className='w-80 mx-auto mt-[-3rem] '
 						src="/student.jpg"
 						alt="/"
 					/>
@@ -33,10 +42,12 @@ const Cards = () => {
 					</div>
 				</div>
 
-				<div className='w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300'>
-					<img
-						className='w-80 mx-auto mt-[-3rem] bg-white'
-						src="/third.png"
+				<div className='w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300 bg-primary'>
+					<Image
+						width={320}
+						height={160}
+						className='w-80 mx-auto mt-[-3rem] '
+						src="/third.jpg"
 						alt="/"
 					/>
 					<h2 className='text-2xl font-bold text-center py-8'>Enroll Today</h2>
