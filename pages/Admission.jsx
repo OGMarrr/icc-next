@@ -35,7 +35,7 @@ const AdmissionsPage = () => {
 							<p>- Basic Education</p>
 							<p>- Senior High School</p>
 							<Link href="https://www.immaculada.edu.ph/_files/ugd/c32f05_2c7f3edde0c749da91f3af9eb945b0ad.pdf">
-								<p className="link ">- College</p>
+								<p className="link">- College</p>
 							</Link>
 						</div>
 					</div>

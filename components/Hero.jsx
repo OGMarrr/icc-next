@@ -5,7 +5,7 @@ import Image from "next/image";
 const Hero = () => {
 	return (
 		<>
-			<div className="text-base-content">
+			<div className="text-base-content ">
 				<div className='h-screen'>
 					{/* bg */}
 
@@ -18,7 +18,7 @@ const Hero = () => {
 						className="h-5/6 w-auto bg-fixed"
 					>
 						<div
-							className="grid grid-cols-2 text-center p-24"
+							className="grid grid-cols-2 text-center p-24  "
 							data-aos="fade-up"
 							data-aos-duration="1000"
 						>
@@ -70,7 +70,7 @@ const Hero = () => {
 						height={225}
 						alt=""
 						className="mb-10"
-						data-aos="fade-right"
+						data-aos="fade-up"
 						data-aos-duration="800"
 					/>
 					<div
