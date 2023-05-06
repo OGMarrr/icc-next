@@ -13,7 +13,7 @@ const Newsletter = () => {
 
 			<div className="h-screen">
 				<div
-					className=' py-10 mx-80 text-success flex flex-col bg-secondary shadow-xl mt-20 rounded-lg'
+					className=' mx-80 text-success flex flex-col bg-secondary shadow-xl mt-20 rounded-lg py-[8rem] px-4'
 					data-aos="fade-up"
 					data-aos-duration="800"
 				>

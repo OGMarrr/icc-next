@@ -7,32 +7,28 @@ const EventPage = () => {
 	return (
 		<>
 			<Navbar />
-			<div>
+			<div className="w-full py-[8rem] px-4">
 				<div>
-					<p className="text-3xl text-center text-success mt-3 h-min">News</p>
+					<p className="text-3xl  text-center text-success  h-min">News</p>
 					<div data-aos="fade-up">
 						<iframe
-							className="w-1/2 mx-auto h-1/2 aspect-video block mt-8 "
+							className="w-1/2 mx-auto h-1/2 aspect-video block mt-8 mb-32"
 							allow="autoplay"
 							src="file.mp4"
 						/>
 					</div>
 				</div>
 				<div className="bg-secondary pt-4 pb-4 mt-2">
-					<div
-						className="text-center text-3xl mt-8 text-success"
-						data-aos="fade-down"
-						data-aos-duration="2500"
-					>
+					<div className="text-center text-3xl my-8 text-success">
 						<p>NCRAA Season 29 Men&apos;s Basketball Tournament</p>
 						<p>BLUE HAWKS OUSTS RADICALS TO STAY UNBEATABLE</p>
 					</div>
 					<div
-						className="columns-2 mt-8 mb-11"
-						data-aos="fade-down"
-						data-aos-duration="2500"
+						className="grid grid-cols-2 w-full max-w-screen-2xl mx-auto gap-10 mb-20"
+						data-aos="fade-up"
+						data-aos-duration="800"
 					>
-						<div className="text-success ml-96">
+						<div className="text-success text-justify mx-10">
 							<p>
 								The Blue Hawks recovered from being rattled to put out a
 								93&ndash;57 win against the Polytechnic University of the
@@ -40,7 +36,7 @@ const EventPage = () => {
 								basketball tournament on Thursday, April 13, at the PUP Gym,
 								Sta. Mesa, Manila.
 							</p>
-							<p>
+							<p className="mt-2">
 								Jake Gaspay registered a performance of 17 points on top of four
 								rebounds for the Blue Hawks, including his defensive stops
 								against the Radicals. The Blue Hawks had to dig deep to find
@@ -49,7 +45,7 @@ const EventPage = () => {
 								hard to cut down the lead of the Radicals by one, 18&ndash;17,
 								to close the first quarter.
 							</p>
-							<p>
+							<p className="mt-2">
 								Going to the second quarter, the team found it difficult to make
 								a shot against the defensive Radicals, but after Gaspay&apos;s
 								re-entery, the Blue Hawks came to their senses, which led to a
@@ -57,50 +53,54 @@ const EventPage = () => {
 								Serafin Duarte&apos;s two-pointers to pull themselves within
 								six, 38&ndash;32.
 							</p>
-							<p>
+							<p className="mt-2">
 								The Blue Hawks continued their momentum as they dominated the
 								Radicals in the third quarter with a score of 64&ndash;43.
 							</p>
-							<p>
+							<p className="mt-2">
 								Entering the fourth quarter, the Radicals tried to get a run,
 								but Gaspay&apos;s three&ndash;pointer stopped it immediately,
 								and it gave way for the Blue Hawks to regain the momentum and
 								dominate the last quarter of the game with the ending score of
 								93&ndash;57.
 							</p>
-							<p>
+							<p className="mt-2">
 								In the final seconds of the second quarter, Serafin Duarte lost
 								his balance and fell to the ground. As of this writing, the
 								Herald team was trying to find out more about Duarte&apos;s
 								condition. We hope for a quick recovery and a less serious
 								injury.
 							</p>
-							<p>
+							<p className="mt-2">
 								The Blue Hawks&apos; next game will be against the PATTS College
 								of Aeronautics Sea Horses on April 17 at the PUP Gym, Sta. Mesa,
 								Manila.
 							</p>
 						</div>
 						<div>
-							<Image width={600} height={600} src="/bestplayer.png" />
-							<Image width={600} height={600} src="/gameb.png" />
+							<div className="mb-2">
+								<Image width={650} height={325} src="/bestplayer.png" />
+							</div>
+							<div>
+								<Image width={650} height={325} src="/gameb.png" />
+							</div>
 						</div>
 					</div>
 				</div>
-				<div
-					className="text-center text-3xl mt-8 text-success"
-					data-aos="fade-down"
-					data-aos-duration="2500"
-				>
+				<div className="text-center text-3xl my-8 text-success">
 					<p>BLUE HAWKS TAEKWONDO JINS KICK</p>
 					<p>HIGH AT WES GACTCHALIAN LEAGUE</p>
 				</div>
+
 				<div
-					className="columns-2 mt-8 mb-11 "
-					data-aos="fade-down"
-					data-aos-duration="2500"
+					className="grid grid-cols-2 w-full max-w-screen-2xl mx-auto gap-10 mb-20 "
+					data-aos="fade-up"
+					data-aos-duration="800"
 				>
-					<div className="text-success ml-96">
+					<div>
+						<Image width={650} height={325} src="/taekwondo.png" className="" />
+					</div>
+					<div className="text-success">
 						<p>
 							The Blue Hawks Taekwondo Team competed in the recently concluded
 							1st Mayor WES GATCHALIAN &ndash; 2023 CAMANAVA AGE GROUP TAEKWONDO
@@ -135,43 +135,30 @@ const EventPage = () => {
 							every Saturday and Sunday at 11:00 am to 1:00 pm. Intesrested
 							students are welcome to join.
 						</p>
-						<p>All the best, Blue Hawks! Congratulations!</p>
+						<p className="font-bold">
+							All the best, Blue Hawks! Congratulations!
+						</p>
 					</div>
-					<div>
-						<Image
-							width={600}
-							height={2500}
-							src="/taekwondo.png"
-							className="mt-14 pt-8"
-						/>
-					</div>
-				</div>
-				<div className="columns-3 ml-64">
-					<Image
-						width={250}
-						height={250}
-						src="/taekwondo1.png"
-						data-aos="zoom-in"
-						data-aos-duration="1000"
-					/>
-					<Image
-						width={250}
-						height={250}
-						src="/taekwondo2.png"
-						data-aos="zoom-in"
-						data-aos-duration="2000"
-					/>
-					<Image
-						width={250}
-						height={250}
-						src="/taekwondo3.png"
-						data-aos="zoom-in"
-						data-aos-duration="3000"
-					/>
 				</div>
 				<p className="text-center text-success text-3xl mb-14 mt-6">
 					BLUE HAWKS TAEKWONDO JINS KICK HIGH
 				</p>
+
+				<div
+					className="grid grid-cols-3 w-full max-w-screen-lg mx-auto gap-10 mb-20"
+					data-aos="fade-up"
+					data-aos-duration="800"
+				>
+					<div>
+						<Image width={300} height={150} src="/taekwondo1.png" />
+					</div>
+					<div>
+						<Image width={300} height={150} src="/taekwondo2.png" />
+					</div>
+					<div>
+						<Image width={300} height={150} src="/taekwondo3.png" />
+					</div>
+				</div>
 			</div>
 		</>
 	);

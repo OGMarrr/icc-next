@@ -63,7 +63,7 @@ const Hero = () => {
 					Welcome to Immaculada Concepcion College !
 				</p>
 
-				<div className="flex flex-row mx-20 mt-10">
+				<div className="flex flex-row mt-10 w-full max-w-screen-2xl mx-auto gap-10 ">
 					<Image
 						src="/grad.jpg"
 						width={450}

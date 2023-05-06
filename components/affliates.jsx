@@ -39,7 +39,7 @@ const affiliation = [
 		href: "https://www.facebook.com/npsac2013/",
 	},
 	{
-		image: "/ISAA.png",
+		image: "/ISAA1.png",
 		href: "https://www.facebook.com/isaaexecutives/",
 	},
 	{
@@ -55,16 +55,16 @@ const affiliation = [
 		href: "https://www.facebook.com/HotelTuristaSanJose/",
 	},
 	{
-		image: "/deped.png",
+		image: "/frog.png",
+		href: "https://www.egetinnz.com",
+	},
+	{
+		image: "/Caloocan1.png",
+		href: "",
+	},
+	{
+		image: "/COA.png",
 		href: "https://www.coa.gov.ph",
-	},
-	{
-		image: "/deped.png",
-		href: "https://www.deped.gov.ph",
-	},
-	{
-		image: "/deped.png",
-		href: "https://www.deped.gov.ph",
 	},
 ];
 
@@ -76,13 +76,13 @@ const AffliatesPage = () => {
 			</div>
 
 			<div
-				className='grid grid-cols-8 w-full max-w-7xl mx-auto gap-3 mb-20'
-				data-aos="fade-up"
-				data-aos-duration="800"
+				className='grid grid-cols-8 w-full max-w-7xl mx-auto  mb-20 items-center '
+				// data-aos="fade-up"
+				// data-aos-duration="800"
 			>
 				{affiliation.map((item, index) => (
 					<Link key={`affiliation_${index + 1}`} href={item.href}>
-						<Image width={220} height={220} src={item.image} alt="" />
+						<Image width={200} height={100} src={item.image} alt="" />
 					</Link>
 				))}
 			</div>

@@ -7,14 +7,14 @@ const AdmissionsPage = () => {
 		<>
 			<Navbar />
 
-			<div className='w-full py-[10rem] px-4 bg-secondary'>
+			<div className='w-full py-[8rem] px-4 bg-secondary'>
 				<p className="text-success text-3xl text-center">Our Admision</p>
 				<p className="text-success text-xl text-center py-10">
 					Enroll now in 3 simple steps and be out partner for the future.
 				</p>
 				<div
 					className='max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8 '
-					data-aos="zoom-out-down"
+					data-aos="fade-up"
 					data-aos-duration="800"
 				>
 					<div className='w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300 bg-primary'>
