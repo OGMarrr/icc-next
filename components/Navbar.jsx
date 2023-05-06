@@ -1,36 +1,83 @@
-import React, { useState } from 'react';
-import Link from 'next/link';
+import React, { useState } from "react";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
+	const [nav, setNav] = useState(false);
 
- 
+	return (
+		<div className='bg-primary flex justify-between items-center h-20  mx-auto px-4 md:flex md:items-center md:justify-between'>
+			<Image
+				className=' mt-28 mx-5'
+				height={80}
+				width={160}
+				src="/immaculada.png"
+				alt="/"
+			/>
 
-  return (
-    <div className='bg-[#1e3a8a] flex justify-between items-center h-24   mx-auto px-4 text-white'>
-      <img className='w-20 mx-auto mt-2' src="/immaculada.png" alt="/" />
-      <h1 className='w-full text-xl font-bold text-[#fbbf24]'>IMMACULADA CONCEPTION COLLEGE </h1>
-      <ul className='hidden md:flex'>
-        <Link href='/'>
-        <button className='p-4 hover:bg-primary rounded'>Home</button>
-        </Link>
-        <button className='p-4 hover:bg-[#26199e] rounded'>News</button>
-        <button className='p-4 hover:bg-[#26199e] rounded'>Events</button>
-        <button className='p-4 hover:bg-[#26199e] rounded'>Admissions</button>
-        
-<Link href='/affliates'>
-<button className='p-4 hover:bg-[#26199e] rounded'>Affiliates</button>
-</Link>
-        
+			<h1 className='w-full text-xl font-bold '>
+				IMMACULADA CONCEPTION COLLEGE{" "}
+			</h1>
 
-        <button className='p-4 hover:bg-[#26199e] rounded'>Organization</button>
-        <button className='p-4 hover:bg-[#26199e] rounded'>Contact</button>
-      </ul>
-     
-     
+			<ul className='hidden md:flex md:items-center items-center gap-5 mx-5'>
+				<li className="">
+					<Link href='/'>
+						<motion.button
+							whileHover={{ scale: 1.1 }}
+							className="p-4 hover:bg-accent rounded-xl"
+						>
+							Home
+						</motion.button>
+					</Link>
+				</li>
 
-    </div>
-  );
+				<li className="">
+					<Link href="/Event">
+						<motion.button
+							whileHover={{ scale: 1.1 }}
+							className='p-4 hover:bg-accent rounded-xl'
+						>
+							Events
+						</motion.button>
+					</Link>
+				</li>
+
+				<li className="">
+					<Link href="/Admission">
+						<motion.button
+							whileHover={{ scale: 1.1 }}
+							className='p-4 hover:bg-accent rounded-xl'
+						>
+							Admissions
+						</motion.button>
+					</Link>
+				</li>
+
+				<li className="">
+					<Link href="/Organization">
+						<motion.button
+							whileHover={{ scale: 1.1 }}
+							className='p-4 hover:bg-accent rounded-xl'
+						>
+							Organization
+						</motion.button>
+					</Link>
+				</li>
+
+				<li className="">
+					<Link href="/Newsletter">
+						<motion.button
+							whileHover={{ scale: 1.1 }}
+							className='p-4 hover:bg-accent rounded-xl'
+						>
+							Contact
+						</motion.button>
+					</Link>
+				</li>
+			</ul>
+		</div>
+	);
 };
 
 export default Navbar;
